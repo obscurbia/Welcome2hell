@@ -1,0 +1,102 @@
+ /*STYLES FOR THE BLOG HOMPAGE*/
+
+ /*MOBILE CONTAINER*/
+@media(width-max: 700px){.container{
+    display: grid;
+    border: green 5px;
+    grid-template-columns: 70px;
+    grid-template-rows: 350px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "sd sd sd sd"
+    "main main main main"
+    "ft ft ft ft"
+}}
+
+/*MASTER CONTAINER*/
+.box{
+    background:grey;
+    border: red 3px;
+    padding: 5px;
+}
+
+/*MAIN ARTCLE FOR PAGE*/
+#main{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        grid-area: main;
+        color:black;
+}
+    
+ /*STYLES FOR HEADERS*/
+#headers{
+    color:darkred;
+}
+
+#h1{
+    font-size: 100px;
+    grid-area: hd;
+    border-color: red;
+    border-width: 5px;
+    text-align: center;
+}
+
+/*STYLES FOR NAVIGATION*/
+.navbox{
+   display: grid;
+   grid-row: repeat(4,1fr);
+   grid-column: repeat(4,1fr);
+
+}
+#nav{
+    grid-area: sd;
+    border: red 1px solid;
+}
+
+/*#home{
+   padding: 5px;
+}
+
+#att{
+    display: grid;
+    grid-row: 50% 50%;
+    grid-column: 50px;
+}
+
+#rest{
+    display: grid;
+    grid-row: 100px;
+    grid-column: 50px;
+    border: red 1px;
+}
+*/
+#book{
+    grid-column-start: 1fr;
+    background: seagreen;
+}
+
+
+ /*STYLES FOR HEADERS*/
+#footer{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: ft;
+}
+
+#ft1{
+    border:red 5px;
+}
+    
+ #signature{
+    color:darkolivegreen;
+}
+
+ /*DESKTOP CONTAINER*/
+ @media(width-min: 701px) {.container{
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 400px 80px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd"
+    "sd sd main main main main main"
+    "ft ft ft ft ft ft ft"
+}}

@@ -1,0 +1,105 @@
+/*ATTRACTIONS PAGE STYLE SHEET*/
+
+/*MOBILE CONTAINER*/
+@media(width-max: 700px){.attcontainer{
+    display: grid;
+    grid-template-columns: 70px;
+    grid-template-rows: 350px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "sd sd sd sd"
+    "main main main main"
+    "ft ft ft ft";
+    border: 2px solid red;
+}}
+
+
+
+/*MASTER CONTAINER*/
+
+.box{
+    background:grey;
+    border: red 3px;
+    padding: 5px;
+}
+
+/*HEADERS*/
+
+#h1{
+    font-size: 80px;
+    text-align: center;
+    color: maroon;
+}
+
+#h2{
+    font-size: 20px;
+    text-align: center;
+    color: maroon;
+}
+#h3{
+    font-size: 25px;
+    text-align: center;
+    color: maroon;
+    grid-area: h3;
+}
+/*NAVIGATION*/
+
+.navbox{
+    display: grid;
+    grid-row: repeat(4,1fr);
+    grid-column: repeat(4,1fr);
+
+ }
+
+ #nav{
+     
+     border: red 1px solid;
+ }
+
+ /*DESKTOP CONTAINER*/
+ @media(width-min: 701px) {.container{
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 400px 80px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd"
+    "sd sd main main main main main"
+    "ft ft ft ft ft ft ft";
+    border: solid red 2px;
+}}
+
+/*MAIN*/
+#attMain{
+    border:yellow 3px;
+
+}
+
+#attGrid{
+    border: yellow 3px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    
+    border: red solid 2px;
+
+}
+
+#att1{
+    border: violet 100px;
+   
+}
+
+#att2{
+    border: white;
+  
+}
+
+#att3{
+    border: black;
+   
+}
+
+#att4{
+    border: blue;
+   
+}
